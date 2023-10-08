@@ -1,0 +1,10 @@
+name: playing triggers
+on: [push]
+jobs: 
+    triggers:
+        name: triggers
+        runs-on: ubuntu-latest
+        steps:
+            -  name: trigger_distpatcher
+               run: echo dispatch 
+
