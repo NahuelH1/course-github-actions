@@ -1,0 +1,13 @@
+name: Hola mundo
+on: [push]
+jobs: 
+    escribir_hola_mundo:
+        name: escribir hola mundo
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout
+              uses: actions/checkout@v3
+            - name: configure node
+              uses: actions/setup-node@v3
+            - name: run script
+              run: node ./helloWorld.js
